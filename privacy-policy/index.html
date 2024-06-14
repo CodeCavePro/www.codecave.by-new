@@ -6,19 +6,63 @@
               t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=gatsby";
               y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
           })(window, document, "clarity", "script", "mrt5sma4ce");
-        </script><title data-gatsby-head="true">CodeCave | ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</title></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-DH196MLBKH"></script><script>
+        </script><title data-gatsby-head="true">CodeCave | ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</title></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('consent', 'default', {
+            'ad_storage': 'denied',
+            'ad_user_data': 'denied',
+            'ad_personalization': 'denied',
+            'analytics_storage': 'denied'
+          });</script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-DH196MLBKH"></script><script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+              dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'G-DH196MLBKH', {
+              "debug_mode":true,
+              "anonymize_ip":false
+            });</script><script>
           var _hsp = (window._hsp = window._hsp || []);
           _hsp.push(["addPrivacyConsentListener", function (consent) {
+            console.log("consent listener fires");
             if (consent?.categories?.analytics) {
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
+              console.log("got analytics consent");
+              window.clarity('consent');
 
-              gtag('config', 'G-DH196MLBKH', {
-                "debug_mode":true,
-                "anonymize_ip":false,
-                "send_page_view":false
+              gtag('consent', 'update', {
+                'analytics_storage': 'granted'
               });
+
+            } else {
+              console.log("withdraw analytics consent");
+              window.clarity('consent', false); 
+
+              gtag('consent', 'update', {
+                'analytics_storage': 'denied'
+              });
+              
+            }
+
+            if (consent?.categories?.advertisement) {
+              console.log("got advertisement consent");
+              gtag('consent', 'update', {
+                'ad_storage': 'granted',
+                'ad_user_data': 'granted',
+                'ad_personalization': 'granted'
+              });
+            } else {
+              console.log("withdraw advertisement consent");
+              gtag('consent', 'update', {
+                'ad_storage': 'denied',
+                'ad_user_data': 'denied',
+                'ad_personalization': 'denied'
+              });
+              
             }
           }]);</script><main class="min-h-screen bg-secondary-100" itemscope="" itemType="https://schema.org/LocalBusiness"><meta itemProp="sameAs" content="https://facebook.com/codecavepro"/><meta itemProp="sameAs" content="https://youtube.com/c/CodeCavePro"/><meta itemProp="sameAs" content="https://twitter.com/codecavepro"/><meta itemProp="sameAs" content="https://vk.com/codecavepro"/><meta itemProp="sameAs" content="https://github.com/CodeCavePro"/><meta itemProp="sameAs" content="https://instagram.com/codecave.pro"/><meta itemProp="sameAs" content="https://linkedin.com/company/codecavepro"/><meta itemProp="name" content="CodeCave"/><meta name="description" content="Outsourcing software and web development"/><meta name="og:image" content="/logo.svg"/><meta property="og:image" content="/logo.svg"/><meta itemProp="address" content="УНП: 193248736  Интернациональная, 25А Минск 220030 Республика Беларусь +375 29 236 61 25"/><meta property="address" content="УНП: 193248736  Интернациональная, 25А Минск 220030 Республика Беларусь +375 29 236 61 25"/><meta name="address" content="УНП: 193248736  Интернациональная, 25А Минск 220030 Республика Беларусь +375 29 236 61 25"/><nav class="sticky top-0 z-50 bg-secondary-100 px-6"><div class="flex w-full max-w-7xl mx-auto undefined"><div class="w-full"><div class="mx-auto max-w-7xl w-full"><div class="relative flex h-20 items-center justify-between"><div class="relative inset-y-0 left-0 flex items-center lg:hidden"><button type="button" class="inline-flex items-center justify-center text-main-70 hover:bg-secondary-30" aria-controls="mobile-menu" aria-expanded="false" aria-label="menu"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" class="text-4xl " height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"></path></svg><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" class="text-4xl hidden" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M563.8 512l262.5-312.9c4.4-5.2.7-13.1-6.1-13.1h-79.8c-4.7 0-9.2 2.1-12.3 5.7L511.6 449.8 295.1 191.7c-3-3.6-7.5-5.7-12.3-5.7H203c-6.8 0-10.5 7.9-6.1 13.1L459.4 512 196.9 824.9A7.95 7.95 0 0 0 203 838h79.8c4.7 0 9.2-2.1 12.3-5.7l216.5-258.1 216.5 258.1c3 3.6 7.5 5.7 12.3 5.7h79.8c6.8 0 10.5-7.9 6.1-13.1L563.8 512z"></path></svg></button></div><div class="flex flex-1 items-center justify-center lg:justify-between"><a aria-label="Домашняя страница КоудКэйв" href="/"><img src="/logo.svg" alt="logo" itemProp="image" class="w-64 object-contain"/></a><ul class="hidden lg:flex grow justify-evenly lg:basis-4/6" itemscope="" itemType="https://schema.org/SiteNavigationElement"><li class="mr-6"><a aria-label="CodeCave услуги" class="text-xl font-bold text-main-100 hover:text-main-10 false" href="/services/">УСЛУГИ</a></li><li class="mr-6"><a aria-label="CodeCave процесс" class="text-xl font-bold text-main-100 hover:text-main-10 false" href="/workflow/">ПРОЦЕСС</a></li><li class="mr-6"><a aria-label="CodeCave проекты" class="text-xl font-bold text-main-100 hover:text-main-10 false" href="/projects/">ПРОЕКТЫ</a></li><li class="mr-6"><a aria-label="CodeCave блог" class="text-xl font-bold text-main-100 hover:text-main-10 false" href="/blog/">БЛОГ</a></li></ul></div><div class="relative"><button class="flex min-h-10 min-w-10 m-2 items-center justify-center px-3 text-sm h-10 bg-main-100 text-secondary-100 border-secondary-100 hover:bg-main-70 hover:outline-main-100  px-0 sm:px-5 md:px-7 text-xl font-bold whitespace-nowrap rounded-full mx-0" id="user-menu-button" aria-expanded="false" aria-haspopup="true" aria-label="contacts menu"><span class="hidden sm:inline">КОНТАКТЫ</span><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="sm:hidden" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg"><g><path fill="none" d="M0 0h24v24H0z"></path><path d="M7 2v20H3V2h4zm2 0h10.005C20.107 2 21 2.898 21 3.99v16.02c0 1.099-.893 1.99-1.995 1.99H9V2zm13 4h2v4h-2V6zm0 6h2v4h-2v-4zm-7 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm-3 4h6a3 3 0 0 0-6 0z"></path></g></svg></button><div class="absolute flex flex-wrap w-full justify-center items-center align-center top-full left-0 z-50 mx-2 gap-2 bg-secondary-100 p-2 shadow shadow-main-10 rounded hidden" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1" itemscope="" itemType="https://schema.org/ContactPoint" itemProp="contactPoint"><a title="Email" class="flex items-center justify-center p-2 hover:bg-secondary-30 rounded" href="/services/#formtarget"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" color="black" style="color:black" height="26px" width="26px" xmlns="http://www.w3.org/2000/svg"><path d="M928 160H96c-17.7 0-32 14.3-32 32v640c0 17.7 14.3 32 32 32h832c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32zm-40 110.8V792H136V270.8l-27.6-21.5 39.3-50.5 42.8 33.3h643.1l42.8-33.3 39.3 50.5-27.7 21.5zM833.6 232L512 482 190.4 232l-42.8-33.3-39.3 50.5 27.6 21.5 341.6 265.6a55.99 55.99 0 0 0 68.7 0L888 270.8l27.6-21.5-39.3-50.5-42.7 33.2z"></path></svg></a><a href="https://t.me/salaros_com" target="_blank" title="Telegram" itemProp="contactOption" class="flex items-center justify-center p-2 hover:bg-secondary-30 rounded"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" color="black" style="color:black" height="26px" width="26px" xmlns="http://www.w3.org/2000/svg"><path d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"></path></svg></a><a href="https://wa.me/375292366125" target="_blank" title="Whatsapp" itemProp="contactOption" class="flex items-center justify-center p-2 hover:bg-secondary-30 rounded"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" color="black" style="color:black" height="26px" width="26px" xmlns="http://www.w3.org/2000/svg"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path></svg></a><a href="https://www.linkedin.com/signup/public-profile-join?vieweeVanityName=salaros" target="_blank" title="Linkedin" itemProp="contactOption" class="flex items-center justify-center p-2 hover:bg-secondary-30 rounded"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" color="black" style="color:black" height="26px" width="26px" xmlns="http://www.w3.org/2000/svg"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg></a></div></div></div></div><div class="lg:hidden hidden" id="mobile-menu"><ul class="space-y-1 px-2 pb-3 pt-2" itemscope="" itemType="https://schema.org/SiteNavigationElement"><li class="mr-6"><a aria-label="CodeCave услуги" class="text-xl font-bold text-main-100 hover:text-main-10 false" href="/services/">УСЛУГИ</a></li><li class="mr-6"><a aria-label="CodeCave процесс" class="text-xl font-bold text-main-100 hover:text-main-10 false" href="/workflow/">ПРОЦЕСС</a></li><li class="mr-6"><a aria-label="CodeCave проекты" class="text-xl font-bold text-main-100 hover:text-main-10 false" href="/projects/">ПРОЕКТЫ</a></li><li class="mr-6"><a aria-label="CodeCave блог" class="text-xl font-bold text-main-100 hover:text-main-10 false" href="/blog/">БЛОГ</a></li></ul></div></div></div><div class="h-1 w-full bg-secondary-100 absolute bottom-0 left-0"><div class="h-full w-0 bg-main-100 transition-all ease-linear duration-300" style="width:0%"></div></div></nav><div class="bg-main-100  text-secondary-100"><div class="flex w-full max-w-7xl mx-auto privacy-policy flex-col gap-4 text-lg py-10"><h1>Политика конфиценциальности ООО КоудКэйв</h1>
 <p>Приложение осуществляет сбор определенных Персональных данных Пользователей.</p>
@@ -206,6 +250,6 @@
           <script
             id="gatsby-chunk-mapping"
           >
-            window.___chunkMapping="{\"app\":[\"/app-e616fddd3b5210362dcb.js\"],\"component---src-pages-404-tsx\":[\"/component---src-pages-404-tsx-8854ec07bcd813a2d5d9.js\"],\"component---src-pages-templates-blog-tsx\":[\"/component---src-pages-templates-blog-tsx-a10e0fe043f178e0f4db.js\"],\"component---src-pages-templates-index-tsx\":[\"/component---src-pages-templates-index-tsx-c5cb809ddb5993b7d045.js\"],\"component---src-pages-templates-policies-tsx\":[\"/component---src-pages-templates-policies-tsx-15f53bf827c36e52ae75.js\"],\"component---src-pages-templates-post-tsx\":[\"/component---src-pages-templates-post-tsx-f051d0704cc9d98056a9.js\"],\"component---src-pages-templates-project-tsx\":[\"/component---src-pages-templates-project-tsx-308b992837bf30bb5ea4.js\"],\"component---src-pages-templates-projects-tsx\":[\"/component---src-pages-templates-projects-tsx-cf149021a41c73b4cdbc.js\"],\"component---src-pages-templates-services-tsx\":[\"/component---src-pages-templates-services-tsx-0dfe85b78d9d32848037.js\"],\"component---src-pages-templates-workflow-tsx\":[\"/component---src-pages-templates-workflow-tsx-0457533762dc3ac52c27.js\"]}";
+            window.___chunkMapping="{\"app\":[\"/app-a7da0140e3f858d8cad4.js\"],\"component---src-pages-404-tsx\":[\"/component---src-pages-404-tsx-8854ec07bcd813a2d5d9.js\"],\"component---src-pages-templates-blog-tsx\":[\"/component---src-pages-templates-blog-tsx-a10e0fe043f178e0f4db.js\"],\"component---src-pages-templates-index-tsx\":[\"/component---src-pages-templates-index-tsx-c5cb809ddb5993b7d045.js\"],\"component---src-pages-templates-policies-tsx\":[\"/component---src-pages-templates-policies-tsx-15f53bf827c36e52ae75.js\"],\"component---src-pages-templates-post-tsx\":[\"/component---src-pages-templates-post-tsx-f051d0704cc9d98056a9.js\"],\"component---src-pages-templates-project-tsx\":[\"/component---src-pages-templates-project-tsx-308b992837bf30bb5ea4.js\"],\"component---src-pages-templates-projects-tsx\":[\"/component---src-pages-templates-projects-tsx-cf149021a41c73b4cdbc.js\"],\"component---src-pages-templates-services-tsx\":[\"/component---src-pages-templates-services-tsx-0dfe85b78d9d32848037.js\"],\"component---src-pages-templates-workflow-tsx\":[\"/component---src-pages-templates-workflow-tsx-0457533762dc3ac52c27.js\"]}";
           </script>
-        <script>window.___webpackCompilationHash="ef34a2a9fb8242e14e57";</script><script src="/webpack-runtime-300f3fa657aa5c87a8a6.js" async></script><script src="/framework-e4f3e98283dd6d5d8e77.js" async></script><script src="/app-e616fddd3b5210362dcb.js" async></script><!-- slice-end id="_gatsby-scripts-1" --></body></html>
+        <script>window.___webpackCompilationHash="01df4270074711c28ec0";</script><script src="/webpack-runtime-300f3fa657aa5c87a8a6.js" async></script><script src="/framework-e4f3e98283dd6d5d8e77.js" async></script><script src="/app-a7da0140e3f858d8cad4.js" async></script><!-- slice-end id="_gatsby-scripts-1" --></body></html>
